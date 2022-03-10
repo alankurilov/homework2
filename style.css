@@ -1,0 +1,69 @@
+h3{
+	color: rgb(0, 255, 0);
+	font-size: 20px;
+}
+h1{
+	color: rgb(0, 238, 255);
+	font-size: 50px;
+}
+.body{
+	background-color: rgb(245, 140, 3);
+}
+.photo{
+	width: 60px;
+	height: 60px;
+}
+.button{
+	border-radius: 12px;
+	background-color: #d6cc72; /* Green */
+    border: none;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.flex{
+	display: flex;
+}
+.menuLink{
+	font-size: 25;
+	color: rgb(0, 0, 0);
+	text-decoration: none;
+	padding: 15px 15px;
+	margin: 15px 15px;
+	text-align: center;
+}
+.menuLink:hover{
+	font-size: 25;
+	color: rgb(0, 0, 0);
+	padding: 15px 15px;
+	margin: 15px 15px;
+	text-align: center;
+}
+.menu{
+	right: 50px;
+	position: absolute;
+}
+.header{
+	font-size: 35;
+	color: rgb(0, 0, 0);
+	padding: 15px;
+	box-shadow: 0 8px 16px 0 rgb(0, 0, 0);
+}
+.img-centered{
+	margin: 10px 0 0 0;
+	justify-content: center;
+	align-content: center;
+	width: 500px;
+	height: 500px;
+}
+.text-centered{
+	margin: 10px 0 10px 30px;
+	text-align: left;
+}
+.w-half{
+	width: 50%;
+}
