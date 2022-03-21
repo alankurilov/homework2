@@ -1,0 +1,69 @@
+// у меня квадрат не двигается в низ 
+
+
+function colorKvadrat(){
+    // 1. Откроет html документ
+    // 2. Найти нужный див по классу
+    var kvadrat = document.getElementsByClassName("kvadrat")[0]
+    // 3. Поменять background-color
+    kvadrat.style.backgroundColor = "black"
+}
+
+// Что здесь происходит?↓
+// находим элемент по классу и берем первыц элемент из всех
+var kvadrat = document.getElementsByClassName("kvadrat")[0]
+// Что здесь происходит?↓
+// создана переменная leftt - отступ от левого края
+var leftt = 0
+
+var top = 0
+// Что здесь происходит?↓
+// Создается функция для движения квадрата
+
+function moveKvadrat(){
+    moveRight()
+}
+
+function moveRight(){
+    // Что здесь происходит? ↓
+    // Увеличивается переменная leftt
+    leftt += 30
+    // Что здесь происходит?
+    // Отступ увеличивается на 30 пикселей
+    kvadrat.style.left = leftt + "px"
+    // Что здесь происходит?
+    // с помощью рекусии мы увеличиваем перменную до 900 и каждые 20 милисекунд функцию еще раз запускают
+    if (leftt <= 900){
+        setTimeout(moveRight, 20)  // <-- Ждет 20 милисекунд и только потом запускает себя заново
+    } else{
+        moveDown()
+    }
+}
+
+
+function moveDown(){
+    top += 30
+    kvadrat.style.top = top + "px"
+    if (top <= 500){
+        setTimeout(moveDown, 20) 
+    }
+}
+
+
+
+
+
+
+
+
+// Что делает эта функция?↓
+// находит див с ID answer и меняет его текст
+function solve(){
+    // 1. Открое html документ
+    console.log(document)
+    // 2. Найти нужный див
+    nuznyiDiv = document.getElementById("answer")
+    console.log(nuznyiDiv)
+    // 3. В этом диве поменять текст
+    nuznyiDiv.innerHTML = "Alan did it"
+}
